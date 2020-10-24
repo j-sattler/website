@@ -1,0 +1,46 @@
+@import "nav.css";
+@import "content.css";
+@import "footer.css";
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../resources/font/JetBrainsMono-1.0.3/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+    url('../resources/font/JetBrainsMono-1.0.3/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('../resources/font/JetBrainsMono-1.0.3/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('../resources/font/JetBrainsMono-1.0.3/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -webkit-font-feature-settings: "liga" on, "calt" on;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight: 100;
+}
+
+html {
+    --background-day: #fff;
+    --font-day: #000;
+
+    --background-night: #333;
+    --font-night: #fff;
+
+    --background: var(--background-night);
+    --color: var(--font-night);
+
+    background-color: var(--background);
+    color: var(--color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-areas: "nav" "content" "footer";
+    grid-gap: 1em;
+}

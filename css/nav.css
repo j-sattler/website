@@ -1,0 +1,103 @@
+.nav-grid {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: ". center .";
+    background-color: var(--background);
+    padding-top: 1em;
+    position: sticky;
+    top: 0;
+}
+
+.nav-grid > div {
+    font-size: 1.2em;
+}
+
+.nav-grid a {
+    text-decoration: none;
+    color: var(--color)
+}
+
+.nav-center {
+    grid-area: center;
+    grid-gap: 1.6em;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "links" "coffee" "social";
+    padding-bottom: 1em;
+    border-bottom: var(--color) solid 1px;
+}
+
+.nav-links {
+    grid-area: links;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+    border-bottom: var(--color) solid 1px;
+    padding-bottom: 0.3em;
+}
+
+.nav-links a {
+    margin: 0.6em;
+    letter-spacing: 0.1em;
+}
+
+.nav-coffee {
+    display: grid;
+    grid-area: coffee;
+    justify-self: center;
+}
+
+.nav-coffee a {
+    font-size: 0.8em;
+    align-self: center;
+    border: var(--color) solid 1px;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.nav-social {
+    grid-area: social;
+}
+
+.nav-social img {
+    height: 32px;
+}
+
+.nav-social svg {
+    height: 32px;
+}
+
+.nav-social path {
+    fill: var(--color);
+}
+
+.github-logo > path {
+    fill: white;
+}
+
+@media (min-width: 1340px) {
+    .nav-grid {
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: ". center .";
+    }
+
+    .nav-center {
+        grid-area: center;
+        justify-items: start;
+        grid-template-columns: 3fr 2fr 1fr;
+        grid-template-areas: "links coffee social";
+    }
+
+    .nav-coffee {
+        justify-self: end;
+        grid-area: coffee;
+    }
+
+    .nav-social {
+        justify-self: end;
+        grid-area: social;
+    }
+}

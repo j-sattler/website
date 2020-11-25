@@ -27,8 +27,8 @@ html {
     --background-night: #333;
     --font-night: #fff;
 
-    --background: var(--background-night);
-    --color: var(--font-night);
+    --background: var(--background-day);
+    --color: var(--font-day);
 
     background-color: var(--background);
     color: var(--color);

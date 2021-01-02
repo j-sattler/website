@@ -1,3 +1,31 @@
 .footer-grid {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: ". center .";
+    background-color: var(--background);
+    font-size: 0.6em;
+}
+
+.footer-grid > div {
+    font-size: 1.2em;
+}
+
+.footer-center {
+    grid-area: center;
+    grid-gap: 1.6em;
+    justify-items: center;
+    display: grid;
+}
+
+@media (min-width: 1600px) {
+    .footer-grid {
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas: ". center .";
+    }
+
+    .footer-center {
+        grid-area: center;
+    }
+
 }

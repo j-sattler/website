@@ -26,16 +26,30 @@
     grid-area: content-right;
 }
 
-#overview {
+#about {
     grid-area: about;
 }
 
-#blog {
+#articles {
     grid-area: blog;
 }
 
 #reading {
     grid-area: reading;
+}
+
+#profile-picture {
+	border-radius: 50%;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+    height: auto;
+    max-width: 240px;
+}
+
+.profile-image-container{
+
 }
 
 pre {
@@ -46,11 +60,52 @@ pre {
     border-left: white dashed 1px;
 }
 
-@media (min-width: 1340px) {
+#articles li, #readings li{
+    margin: 10px 0;
+}
+#article a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+@media (min-width: 1600px) {
     .content-grid {
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: "content-left content-center content-right";
         grid-area: content;
     }
 }
 
+.tag {
+    font-size: 0.55em;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.software {
+    background-color: #577590;
+    color:#ffffff;
+}
+
+.home-automation {
+    background-color: #F9C74F;
+    color: #ffffff;
+}
+
+.productivity {
+    background-color: #43AA8B;
+    color: #ffffff;
+}
+
+.communication {
+    background-color: #F94144;
+    color: #ffffff;
+}
+
+.photography {
+    background-color: #F3722C;
+    color: #ffffff;
+}
+
+.draft {
+    display: none;
+}

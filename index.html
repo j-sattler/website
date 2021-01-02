@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jsattlers blog</title>
+    <title>Joshua Sattler</title>
     <link href='css/index.css' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="resources/img/personal-logo/logo-2.png">
 </head>
 
 <body class="main">
@@ -12,13 +14,13 @@
     <nav class="nav-grid">
         <div class="nav-center">
             <div class="nav-links">
-                <a href="#">Home</a>
-                <a href="#">Articles</a>
-                <a href="#">Readings</a>
+                <a href="#about">About</a>
+                <a href="#articles">Articles</a>
+                <a href="#readings">Readings</a>
             </div>
-            <!--<div class="nav-coffee">
-                <a href="https://paypal.me/jslr94/2">Reach out for me</a>
-            </div>-->
+            <div class="nav-coffee">
+                <a href="mailto:joshua.sattler@mailbox.org">Reach out</a>
+            </div>
             <div class="nav-social">
                 <a class="github-logo" href="https://github.com/j-sattler">
                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title>
@@ -36,80 +38,148 @@
         <div class="content-left">
         </div>
         <div class="content-center">
-            <div id="overview">
-                <h1>Home</h1>
-                <hr style="color: white">
-                Welcome,<br>
-                this is a personal website that contains all kinds of information.
-                I write mainly about the following topics:
+            <div id="about">
+                <div class="profile-image-container">
+                    <img id="profile-picture" src="resources/img/profile.jpg" alt="profile picture">
+                </div>
+                Welcome!<br>
+                My name is Joshua and I am a Software Engineer from Germany. I write about a variety of topics and
+                projects on this website.
+                Most probably the things you can find here fall into one of the following categories:
                 <ul>
                     <li>Software Engineering</li>
-                    <li>Home Automation</li>
                     <li>Productivity</li>
+                    <li>Home Automation</li>
                 </ul>
-                The main objective of this website is to improve my writing skills and
-                to better understand the things that I'm doing by writing about them.
+                The main objective of this website is to share knowledge with others and my future self.
+                I also think that writing helps consolidating knowledge which is another reason for creating this
+                website.
             </div>
-            <div id="blog">
+            <div id="articles">
                 <h1>Articles</h1>
                 <hr style="color: white">
-                <h3>First Blog Post</h3>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.</p>
-                <h4 style="font-weight: bold">Subsection 1</h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.</p>
-                <h4 style="font-weight: bold">Subsection 2</h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.</p>
-                <h4 style="font-weight: bold">Subsection 3</h4>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua.
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.</p>
-                <pre>
-                        <code>
-// Some Demo Code
-public class HelloWorld {
-
-    public static void main(String[]args){
-        System.out.println("Hello World");
-    }
-}
-                        </code>
-                    </pre>
+                <h4 style="font-weight: bold">2021</h4>
+                <ul>
+                    <li class="draft"><a href="articles/2021/01/creating-a-personal-website-or-blog.html">2021-01: Creating a Personal Website or Blog</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li class="draft"><a href="articles/2021/01/things-everyone-should-invest-in.html">2021-01: Things Everyone Should Invest In</a>
+                        <span class="tag productivity">productivity</span>
+                        <span class="tag photography">lifestyle</span>
+                    </li>
+                    <li><a href="articles/2021/01/hello-world-article.html">2021-01: Hello World (Reference Article)</a>
+                        <span class="tag productivity">green</span>
+                        <span class="tag photography">orange</span>
+                        <span class="tag software">blue</span>
+                        <span class="tag communication">red</span>
+                    </li>
+                </ul>
             </div>
-            <div id="reading">
-                <h1>Reading</h1>
+            <div id="readings">
+                <h1>Readings</h1>
                 <hr style="color: white">
+                A curated list of articles, books, projects, videos or other lists of curated articles:
+                <ul>
+                    <li><a href="https://clig.dev/">Command Line Interface Guidelines</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="https://ideopunk.com/2020/12/22/100-tips-for-a-better-life/">100 Tips For A Better
+                        Life</a>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li><a href="https://ciechanow.ski/cameras-and-lenses/">Cameras and Lenses</a>
+                        <span class="tag photography">photography</span>
+                    </li>
+                    <li><a href="https://vasilishynkarenka.com/learning/">How to remember what you learn</a>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li><a href="http://tiffanymatthe.com/not-thinking">The Art of Not Thinking</a>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li>
+                        <a href="https://techbeacon.com/enterprise-it/monitoring-demystified-guide-logging-tracing-metrics">Monitoring Demystified: A guide for logging, tracing, metrics</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="https://django-hordak.readthedocs.io/en/latest/accounting-for-developers.html">Double Entry Accounting for Developers</a>
+                    </li>
+                    <li><a href="https://nickwignall.com/6-habits-of-highly-focused-people/">Habits of Highly Focused People</a>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li>
+                        <a href="https://media.defense.gov/2018/Oct/09/2002049591/-1/-1/0/DIB_DETECTING_AGILE_BS_2018.10.05.PDF">DIB Guide: Detecting Agile BS</a>
+                        <span class="tag communication">communication</span>
+                    </li>
+                    <li><a href="https://research.swtch.com/deps">Our Software Dependency Problem</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="http://www.dcaulfield.com/team-improvement-techniques/">Team Improvement Techniques</a>
+                        <span class="tag communication">communication</span>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li><a href="https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/">Why Developers Stop Learning: Rise of the Expert Beginner</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="https://adlrocha.substack.com/p/adlrocha-software-should-be-designed">Software should be designed to last</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="https://snir.dev/blog/remote-async-communication/">Written communication is remote work super power</a>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li><a href="https://www.brandonsmith.ninja/blog/libraries-not-frameworks">Write Libraries, Not Frameworks</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="https://blog.theboringtech.io/2020/04/16/time_is_the_real_currency.html">Time is the real currency we have</a>
+                        <span class="tag productivity">productivity</span>
+                    </li>
+                    <li><a href="http://web.eecs.utk.edu/~azh/blog/booksformystudents.html">Books I recommend to my software engineering students</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li>
+                        <a href="https://ocw.mit.edu/resources/res-tll-005-how-to-speak-january-iap-2018/how-to-speak/index.htm">How to Speak</a>
+                        <span class="tag communication">communication</span>
+                    </li>
+                    <li><a href="https://github.com/VGraupera/1on1-questions">1-on-1 meeting questions</a>
+                        <span class="tag communication">communication</span>
+                    </li>
+                    <li><a href="https://missing.csail.mit.edu/">The missing semester of CS education</a>
+                        <span class="tag software">software</span>
+
+                    </li>
+                    <li><a href="https://interrupt.memfault.com/blog/i2c-in-a-nutshell">I2C in a Nutshell</a>
+                        <span class="tag software">software</span>
+
+                    </li>
+                    <li><a href="https://github.com/hakluke/how-to-exit-vim/blob/master/README.md">How to Exit Vim</a>
+                        <span class="tag software">software</span>
+
+                    </li>
+                    <li><a href="https://www.bottomupcs.com/index.xhtml">Computer Science from the Bottom Up</a>
+                        <span class="tag software">software</span>
+
+                    </li>
+                    <li><a href="https://www.divio.com/blog/documentation/">Four kinds of documentation</a>
+                        <span class="tag software">software</span>
+
+                    </li>
+                    <li><a href="https://fatbusinessman.com/2019/my-favourite-git-commit">My favourite Git commit</a>
+                        <span class="tag software">software</span>
+                    </li>
+                    <li><a href="https://google.github.io/eng-practices/review/reviewer/">How to do a code review</a>
+                        <span class="tag software">software</span>
+                        <span class="tag communication">communication</span>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="content-right">
         </div>
     </article>
     <footer class="footer-grid">
+        <div class="footer-center">
+            <div>© 2021 Joshua Sattler | This website uses <a href="https://www.jetbrains.com/lp/mono/">Jetbrains
+                Mono</a> font | Please report broken links or typos
+            </div>
+        </div>
     </footer>
 </div>
 </body>

@@ -41,6 +41,8 @@ body {
 
 .grid-wrapper {
     display: grid;
+    min-height: 100%;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "nav" "content" "footer";
     grid-gap: 1em;
 }

@@ -40,7 +40,7 @@
 }
 
 .nav-links a {
-    margin: 0.6em;
+    margin: 0.1em;
     letter-spacing: 0.1em;
 }
 
@@ -99,5 +99,9 @@
     .nav-social {
         justify-self: end;
         grid-area: social;
+    }
+    .nav-links a {
+        margin: 0.6em;
+        letter-spacing: 0.1em;
     }
 }
